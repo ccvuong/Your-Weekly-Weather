@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap links -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
+    <link rel="stylesheet" href="assets\style.css" />
+
+    <title>Weekly Weather</title>
+</head>
+
+<body>
+
+    <header class="bg-color">
+        <h1 class="title">Weekly Weather</h1>
+    </header>
+
+    <div class="m-4 p-4">
+        <div class="col-md-12">
+            <div class="row">
+
+                <!-- left side of page with search information -->
+                <div class="col-md-3" id="search-section">
+
+                    <h5 class="search-city-header">Search for a City:</h5>
+                    <form class="form-inline" id="search-bar-form">
+
+                        <input type="search" class="form-control mb-3 ds-input" id="current-city"
+                            placeholder="Enter a city name...">
+
+                        <button type="submit" class="btn btn-primary mb-3" id="search-btn">Search
+
+                        </button>
+
+                    </form>
+
+                    <!-- past city search remains here -->
+                    <ul class="list-group" id="city-searched">
+                    </ul>
+
+                </div>
+
+                <!-- the five day weather info -->
+                <div class="col-md-9">
+
+                    <div class="card mt-2">
+                        <div class="card-body">
+                            <div class="d-flex flex-row ">
+                                <h2 class="card-title align-self-center" id="selected-city-name"></h2>
+                            </div>
+                            <h6 class="card-subtitle text-muted" id="temp"><i class="fa-regular fa-temperature-three-quarters"></i>Temperature: </h6>
+                            <h6 class="card-subtitle mt-3 text-muted" id="humidity">Humidity: </h6>
+                            <h6 class="card-subtitle mt-3 text-muted" id="wind-speed">Wind Speed: </h6>
+
+                            <span id="uv-box" class=""></span></h6>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="row justify-content-between" id="weekly-forecast">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.3/dayjs.min.js"></script>
+    <script src="assets\script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+body {
+  background-color: rgb(211, 211, 210);
+}
+
+.bg-color {
+  background-color: #215d99 !important;
+  padding: 10px;
+}
+
+.title {
+  text-align: center;
+  color: azure;
+  font-size: 40px;
+}
+
+.card {
+  background-color: #05cfff;
+}
+
+.search-city-header {
+  font-size: x-large;
+}
+
+.bg-primary {
+  background-color: #215d99 !important;
+}
+
+.mt-2 {
+  margin-left: -9px !important;
+}
+
+.justify-content-between {
+  margin-top: 30px;
+}
+
+#current-city {
+  width: 50%;
+}
+
+#search-btn {
+  margin-left: 2%;
+}
+
+.text-muted {
+  color: black !important;
+  font-size: larger;
+}
